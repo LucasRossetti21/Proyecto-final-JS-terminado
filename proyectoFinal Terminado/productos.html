@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="inicioGrid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://kit.fontawesome.com/7c9864b6ca.js" crossorigin="anonymous"></script>
+    <title>eCommerce</title>
+</head>
+<body>
+    <div class="container-layout" id="container-layout">
+        <header class="container-header">
+            <div class="container-title-icon">
+                <div class="menu-title-icon" id="menu-title-icon">
+                  <img src="./icon/menu.svg" alt="" class="menu-icon" id="menu-icon">
+                  <img src="./image/LOGO.png" alt="" style="height: 40%;">
+                </div>
+                <div class="container-input">
+                  <input type="text" name="" id="navbar_input" class="input" placeholder="Buscar producto">
+                  <div class="input-search" id="navbar_button"><img src="./icon/search.svg" alt="" style="width: 20px;" class="icon"></div>
+                </div>
+            </div>
+            <div class="container-cart-user" id="container-cart-user">
+                <div class="icon-carrito-actualizacion" id="icon-carrito-actualizacion"></div>
+                <img src="./icon/shopping-cart.svg" alt="" style="width: 20px;" id="icon-carrito" class="icon">
+                <img src="./icon/user.svg" alt="" style="width: 23px; color: white;" class="icon">
+            </div>
+        </header>
+        <div class="slider">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./image/banner-uno.png" class="d-block w-100 h-100" alt="...">
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <main class="container-main" id="seccion-productos">
+
+        </main>
+        <div class="container-carrito" id="container-carrito">
+            <div class="carrito-user">Carrito</div>
+            <div class="carrito-productos" id="carrito-productos"></div>
+            <div class="carrito-total" id="carrito-total"></div>
+        </div>
+        <div class="container-menu">
+            <div class="menu-logo" id="menu-user">
+
+            </div>
+            <div class="menu-home menu-section">
+              <img src="./icon/home.svg" alt="">Inicio
+            </div>
+            <div class="menu-ofertas menu-section">
+              <img src="./icon/dollar-sign.svg" alt="">Ofertas
+            </div>
+            <div class="menu-contacto menu-section">
+              <img src="./icon/message-circle.svg" alt="">Contacto
+            </div>
+            <div class="menu-info menu-section">
+              <img src="./icon/info.svg" alt="">Info
+            </div>
+        </div>
+        <div class="container-notice" id="container-notice">
+            <a class="notice" id="notice" href="https://www.theverge.com">
+              <div class="notice-title" id="notice-title"></div>
+              <div class="notice-description" id="notice-description"></div>
+            </a>
+        </div>
+        <footer class="container-footer">
+            <div class="footer-creador"><p>Creado por Lucas Maximiliano Rossetti - Kosmo</p></div>
+            <div class="footer-redes-sociales">
+                <a href="https://www.linkedin.com/in/lucasmaximilianorossetti/" target="_blank"><img src="./icon/linkedin.svg" alt=""></a>
+                <a href="https://github.com/LucasRossetti21" target="_blank"><img src="./icon/github.svg" alt=""></a>
+                <a href="https://www.instagram.com/lukah.sstt/" target="_blank"><img src="./icon/instagram.svg" alt=""></a>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="localStorage.js"></script>
+    <script src="productos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="inputBusqueda.js"></script>
+    <script src="carrito.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
+  
